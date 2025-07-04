@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>label{display: block; margin-top: 10px;};</style>
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="#" method="GET">
+            <label for="n">Nome</label>
+            <input type="text" nome="nome" id="n">
+
+            <label for="e">E-mail</label>
+            <input type="email" name="email" id="e" required>
+
+            <label for="i">Idade</label>
+            <input type="number" name="idade" id="i" min="1" max="125">
+
+            <label for="s">Senha</label>
+            <input type="password" name="senha" id="s" maxlength="10">
+
+            <label for="a">Arquivo</label>
+            <input type="file" name="arquivo" id="a">
+
+            <label for="g">Gênero</label>
+            <label><input type="radio" name="genero" value="Masculino">Masculino</label> 
+            <label><input type="radio" name="genero" value="Feminino">Feminino</label> 
+            <label><input type="radio" name="genero" value="Outros">Outros</label> 
+
+            <label>Esporte</label>
+            <label><input type="checkbox" name="esporte" value="Futebol">Futebol</label>
+            <label><input type="checkbox" name="esporte" value="volei">Vôlei</label>
+            <label><input type="checkbox" name="esporte" value="natacao">Natação</label>
+            <label><input type="checkbox" name="esporte" value="basquete">Basquete</label>
+
+            <label for="u">UF</label>
+            <select name="u" id="uf">
+            <optgroup label="Centro Oeste">
+                <option value="DF">DF</option>
+                <option value="GO">GO</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+            </optgroup>
+            <optgroup label="Sul">
+                <option value="SC">SC</option>
+                <option value="PR">PR</option>
+                <option value="RS">RS</option>
+            </optgroup>
+        </select>
+    </form>
+</body>
+</html>
